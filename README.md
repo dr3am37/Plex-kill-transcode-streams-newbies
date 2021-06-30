@@ -1,4 +1,4 @@
-# Tautulli-transcode-script
+# Tautulli-notranscode-script
 
 
 ## Requirements
