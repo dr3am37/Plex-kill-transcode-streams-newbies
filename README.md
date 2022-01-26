@@ -4,7 +4,7 @@
 ## Requirements
 
 Python3 / requests (usually included with python3)<br>
-Tautulli (fantastic app that you should be using anyway)<br>
+Tautulli (fantastic app that you should be using and must for this script anyway)<br>
 PlexPass
 
 This script allows you to stop streams that use trancoding.
