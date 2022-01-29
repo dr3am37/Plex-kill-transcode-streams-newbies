@@ -50,15 +50,29 @@ def EnforceConcurrent(tActivitySessions, tapi, concurrentMsg):
                 userid = valeur[j].get('user_id')
                 stream_video_resolution = valeur[j].get('stream_video_resolution')
 
+
+
                 if userid not in concSettings:
 
-                    if(valeur[j].get('product') == 'Plex Web'):
-                        tapi.TerminateSession(valeur[j].get('session_key'), concurrentMsg)
-                        print("Terminating sessions")
+                    print(str(userid) + " : User unauthorized")
 
-                    elif(valeur[j].get('transcode_decision') == 'transcode' and valeur[j].get('state') != 'paused' and  (stream_video_resolution != 'sd' ) ):
+                    if(valeur[j].get('product') == 'Plex Web' or valeur[j].get('product') == 'Plex Media Player'):
+                        if(valeur[j].get('product') == 'Plex Media Player') :
+                            concurrentMsg = "PLEX ENFORCER - YOUR MEDIA PLAYER IS DEPRECATED"
+                        if(valeur[j].get('product') == 'Plex Web') :
+                            concurrentMsg = "PLEX ENFORCER - YOUR ARE NOT AUTHORIZED TO USE PLEX WEB"
                         tapi.TerminateSession(valeur[j].get('session_key'), concurrentMsg)
-                        print("Terminating sessions")
+                        print(str(userid) + " : Terminating sessions")
+                        EnforcementLogger(valeur[j].get('friendly_name'), "transcode")
+
+                    elif(valeur[j].get('video_decision') == 'transcode' and valeur[j].get('state') != 'paused' and  (valeur[j].get(stream_video_resolution) != 'sd' ) ):
+
+                        tapi.TerminateSession(valeur[j].get('session_key'), concurrentMsg)
+                        print(str(userid) + " : Terminating sessions")
+                        EnforcementLogger(valeur[j].get('friendly_name'), "transcode")
+
+                else :
+                    print(str(userid) + " : User authorized")
                         
     except:
         pass
