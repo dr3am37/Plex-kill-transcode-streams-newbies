@@ -1,7 +1,6 @@
 #!/bin/sh
 # script that loops and runs the killstream python file
 
-
 while [ : ]
 do
     clear
