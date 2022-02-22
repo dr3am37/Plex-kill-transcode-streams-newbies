@@ -23,12 +23,15 @@ Edit the file "authorized.txt" and add the username id followed by a semicolon a
 
 ## Edit your tautulli settings
 
-Add a new notifications agent called killstream
+Add a new notifications agent called killstream and edit the configuration and triggers like the following images:
 
 <p align="center">
-  <img src="./img/settings.png" width="350" title="Tautulli">
+  <img src="./img/settings.png" width="350" title="settings">
 </p>
 
+<p align="center">
+  <img src="./img/triggers.png" width="350" title="triggers">
+</p>
 
 <br><br><br>
 Script based on https://github.com/Dosk3n/Tautulli_IP_Enforcer
