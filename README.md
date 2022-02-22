@@ -1,4 +1,4 @@
-# Tautulli-notranscode-script
+# Plex kill transcode streams
 
 
 ## Requirements
