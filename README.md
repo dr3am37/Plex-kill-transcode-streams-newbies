@@ -1,5 +1,8 @@
 # Plex kill transcode streams
 
+This script allows you to stop streams that use trancoding.
+Prohibits the use of plex web and Plex Media Player.
+Allow all users to transcode for SD streams
 
 ## Requirements
 
@@ -8,9 +11,7 @@ Tautulli (fantastic app that you should be using and must for this script anyway
 PlexPass
 
 
-This script allows you to stop streams that use trancoding.
-Prohibits the use of plex web.
-Allow all users to transcode for SD streams
+
 
 ## Install requirements :
 
@@ -33,7 +34,7 @@ Edit the file "authorized.txt" and add the username id followed by a semicolon a
 # If you don't want to run the shell script in background :
 
 
-## Install python requirements!
+## Install python requirements
 
    ```shell
    user:~/plex-kill-transcode-streams$ sudo pip install -r requirements.txt
