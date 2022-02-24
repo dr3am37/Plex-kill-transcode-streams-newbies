@@ -33,9 +33,9 @@ Specifically you need to edit this part: "/YOURPATH/Tautulli_IP_Enforcer" <br>
 Edit the file "authorized.txt" and add the username id followed by a semicolon and the limit of unique IP addresses that are allowed. <br>For example:<br><br>52252389<br>56428612<br><br>will allow 2 precise accounts to transcode streams for this Plex server. If a user is not in the text file then they can't transcode streams. They have to use direct stream or direct play.
 
 
-## Method 2 : tautulli run itself the script  :
+## Method 2 : tautulli runs itself the script  :
 
-Tautulli run the script when a stream starts, resumes or when a stream changes its transcode decision.
+Tautulli run the script when a stream starts, resumes or when a stream changes its transcoding decision.
 
 ### Install requirements
 
