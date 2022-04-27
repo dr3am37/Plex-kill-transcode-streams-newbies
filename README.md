@@ -1,8 +1,8 @@
-# Plex kill transcode streams
+# Plex kill transcode streams for new users
 
-This script allows you to stop streams that use trancoding.
-Prohibits the use of plex web and Plex Media Player.
-Allow all users to transcode for SD streams
+This script is based on plex-kill-transcode-streams script but it's aimed at new users not knowing about the "Play origianl quality"
+If a 720p 2mpbs stream is detected the stream will be stopped by the script with a message explaining the issue.
+the user will be stored in "purgatory" meaning he will get warned again if he does it again but after that will be moved to an authorized list to account for people that could perhaps only play 720p 2mpbs for various reasons.
 
 ### Requirements
 
