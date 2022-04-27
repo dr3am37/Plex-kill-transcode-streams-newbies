@@ -4,7 +4,7 @@
 while [ : ]
 do
     clear
-    cd /YOURPATH/Killstream && python3 killstream.py
+    cd /YOURPATH/Killstream && python3 killstream.py "-i"
     sleep 2
     echo "Sleeping..."
     sleep 20
