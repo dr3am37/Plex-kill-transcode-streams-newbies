@@ -129,7 +129,7 @@ def EnforceConcurrent(tActivitySessions, tapi, concurrentMsg,web,mediaplayer,sd)
                             EnforcementLogger(valeur[j].get('friendly_name'), "transcode")
                         else:
                             print(str(userid) + " : User is not in purgatory but not authorized, added to purgatory")
-                            concurrentMsg = "NOTICE! - You are playing at a lower quality! set the quality to Play Original! This message will appear again if you don't :(, visit http://hello.hyrule.vip with the password 'yam' if you're not sure what to do!."
+                            concurrentMsg = "NOTICE! - You are playing at a lower quality! set the quality to Play Original! This message will appear again if you don't :("
                             tapi.TerminateSession(valeur[j].get('session_key'), concurrentMsg)
                             print(str(userid) + " : Terminating sessions")
                             EnforcementLogger(valeur[j].get('friendly_name'), "transcode")
